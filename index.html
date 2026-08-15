@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abhimanyu | BCA Student &amp; Aspiring Web Developer</title>
+<meta name="description" content="Portfolio of Abhimanyu, a BCA student at Jeppiaar University learning HTML, CSS and JavaScript while building his first web projects." />
+
+<meta property="og:title" content="Abhimanyu | BCA Student & Aspiring Web Developer" />
+<meta property="og:description" content="BCA student learning to build the web, one project at a time." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Abhimanyu<span class="dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav-link active" data-nav>Home</a>
+      <a href="#about" class="nav-link" data-nav>About</a>
+      <a href="#skills" class="nav-link" data-nav>Skills</a>
+      <a href="#projects" class="nav-link" data-nav>Projects</a>
+      <a href="#journey" class="nav-link" data-nav>Journey</a>
+      <a href="#contact" class="nav-link" data-nav>Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary btn-sm nav-cta">Let's Talk</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" data-nav>Home</a>
+    <a href="#about" data-nav>About</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#journey" data-nav>Journey</a>
+    <a href="#contact" data-nav>Contact</a>
+    <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-content reveal">
+        <span class="badge">BCA STUDENT &bull; ASPIRING DEVELOPER</span>
+
+        <h1 class="hero-title">
+          Hi, I'm Abhimanyu.<br>
+          I build the <span class="gradient-text">web</span> while learning how it works.
+        </h1>
+
+        <p class="hero-text">
+          I'm a BCA student learning HTML, CSS and JavaScript from the ground up —
+          building small projects, breaking things, and figuring out how the web
+          actually works, one line of code at a time.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Let's Connect</a>
+        </div>
+
+        <div class="status-line">
+          <span class="status-dot"></span>
+          Currently learning <strong>JavaScript</strong>
+        </div>
+
+        <div class="typing-line">
+          <span class="typing-prefix">&gt;</span>
+          <span id="typingText"></span><span class="cursor-blink">|</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="editor-scene">
+          <div class="editor-window">
+            <div class="editor-topbar">
+              <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+              <span class="editor-filename">index.html</span>
+            </div>
+            <div class="editor-body">
+              <div class="code-line"><span class="tok-tag">&lt;div</span> <span class="tok-attr">class</span>=<span class="tok-str">"hero"</span><span class="tok-tag">&gt;</span></div>
+              <div class="code-line indent-1"><span class="tok-tag">&lt;h1&gt;</span><span class="tok-plain">Hello, World</span><span class="tok-tag">&lt;/h1&gt;</span></div>
+              <div class="code-line indent-1"><span class="tok-tag">&lt;p&gt;</span><span class="tok-plain">Learning JS...</span><span class="tok-tag">&lt;/p&gt;</span></div>
+              <div class="code-line"><span class="tok-tag">&lt;/div&gt;</span></div>
+              <div class="code-line indent-0 blink-line"><span class="tok-comment">// building something new</span></div>
+            </div>
+          </div>
+
+          <div class="float-card card-html">HTML5</div>
+          <div class="float-card card-css">CSS3</div>
+          <div class="float-card card-js">JS</div>
+
+          <div class="glow-orb orb-1"></div>
+          <div class="glow-orb orb-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ================= TECH STRIP ================= -->
+  <section class="tech-strip reveal">
+    <p class="tech-strip-label">WHAT I'M WORKING WITH</p>
+    <div class="tech-badges">
+      <div class="tech-badge"><span class="tech-icon">&#60;/&#62;</span>HTML5</div>
+      <div class="tech-badge"><span class="tech-icon">&#123;&#125;</span>CSS3</div>
+      <div class="tech-badge"><span class="tech-icon">&#9889;</span>JavaScript</div>
+      <div class="tech-badge"><span class="tech-icon">&#128187;</span>VS Code</div>
+      <div class="tech-badge"><span class="tech-icon">&#128193;</span>GitHub</div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="section-grid">
+      <div class="about-visual reveal">
+        <div class="profile-ring">
+          <div class="profile-placeholder">AM</div>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2 class="section-title">Learning today. Building for tomorrow.</h2>
+
+        <p class="body-text">
+          I'm currently pursuing my Bachelor of Computer Applications (BCA) at
+          Jeppiaar University, with an expected graduation in 2028. Web development
+          caught my attention early — the idea that a few lines of code can turn
+          into something people actually use is what keeps me coming back to it.
+        </p>
+        <p class="body-text">
+          Right now I'm focused on getting the fundamentals right: solid HTML
+          structure, clean CSS, and JavaScript that actually makes sense to me
+          before I move on to anything more advanced.
+        </p>
+        <p class="body-text">
+          I'm not in a rush to look finished. I'd rather build real, small things
+          consistently and let the skill catch up honestly than fake my way to
+          looking experienced.
+        </p>
+
+        <div class="info-card">
+          <div class="info-row">
+            <span class="info-label">Education</span>
+            <span class="info-value">Bachelor of Computer Applications (BCA)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">University</span>
+            <span class="info-value">Jeppiaar University</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Graduation</span>
+            <span class="info-value">Expected 2028</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Current Focus</span>
+            <span class="info-value">JavaScript Fundamentals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="skills" id="skills">
+    <p class="eyebrow center">SKILLS</p>
+    <h2 class="section-title center">My Current Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><span class="skill-icon">&#60;/&#62;</span></div>
+        <h3>HTML5</h3>
+        <span class="level-tag level-basic">Basic</span>
+        <p>Practicing semantic structure, forms, and building accessible page layouts from scratch.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><span class="skill-icon">&#127912;</span></div>
+        <h3>CSS3</h3>
+        <span class="level-tag level-basic">Basic</span>
+        <p>Learning flexbox, grid, and responsive design to turn plain HTML into real layouts.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><span class="skill-icon">&#9889;</span></div>
+        <h3>JavaScript</h3>
+        <span class="level-tag level-learning">Currently Learning</span>
+        <p>Working through logic, DOM manipulation, and events to make pages actually interactive.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CURRENTLY LEARNING (JS SPOTLIGHT) ================= -->
+  <section class="spotlight reveal">
+    <div class="spotlight-card">
+      <p class="eyebrow">CURRENTLY LEARNING</p>
+      <h2 class="section-title">JavaScript</h2>
+      <p class="spotlight-flow">
+        <span>Learning</span> <span class="arrow">&rarr;</span>
+        <span>Practicing</span> <span class="arrow">&rarr;</span>
+        <span>Building</span>
+      </p>
+
+      <div class="chip-row">
+        <span class="chip">Variables</span>
+        <span class="chip">Functions</span>
+        <span class="chip">Arrays</span>
+        <span class="chip">Objects</span>
+        <span class="chip">DOM</span>
+        <span class="chip">Events</span>
+        <span class="chip">Basic Logic</span>
+        <span class="chip">Browser APIs</span>
+      </div>
+
+      <div class="progress-visual" aria-hidden="true">
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-labels">
+          <span>Learning</span><span>Practicing</span><span>Building</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects" id="projects">
+    <p class="eyebrow center">PROJECTS</p>
+    <h2 class="section-title center">Things I'm Building</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-preview">
+          <span class="project-number">01</span>
+          <div class="preview-mock preview-landing" aria-hidden="true">
+            <div class="mock-bar"></div>
+            <div class="mock-hero"></div>
+            <div class="mock-row"><span></span><span></span><span></span></div>
+          </div>
+          <span class="status-pill">Coming Soon</span>
+        </div>
+        <div class="project-body">
+          <h3>Responsive Landing Page</h3>
+          <p>A clean, fully responsive landing page built to practice layout structure and CSS fundamentals.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/abhimanyu0211" class="link-btn" target="_blank" rel="noopener">GitHub <span class="link-arrow">&rarr;</span></a>
+            <span class="link-btn disabled">Live Demo <span class="link-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-preview">
+          <span class="project-number">02</span>
+          <div class="preview-mock preview-todo" aria-hidden="true">
+            <div class="mock-bar"></div>
+            <div class="mock-task"></div>
+            <div class="mock-task"></div>
+            <div class="mock-task short"></div>
+          </div>
+          <span class="status-pill">Coming Soon</span>
+        </div>
+        <div class="project-body">
+          <h3>JavaScript To-Do App</h3>
+          <p>A small task manager built to practice DOM manipulation, events, and basic state handling in JS.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/abhimanyu0211" class="link-btn" target="_blank" rel="noopener">GitHub <span class="link-arrow">&rarr;</span></a>
+            <span class="link-btn disabled">Live Demo <span class="link-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-preview">
+          <span class="project-number">03</span>
+          <div class="preview-mock preview-mini" aria-hidden="true">
+            <div class="mock-bar"></div>
+            <div class="mock-grid">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <span class="status-pill">Sample Project</span>
+        </div>
+        <div class="project-body">
+          <h3>Personal Mini Website</h3>
+          <p>A small personal site tying together HTML, CSS and JavaScript into one working project.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/abhimanyu0211" class="link-btn" target="_blank" rel="noopener">GitHub <span class="link-arrow">&rarr;</span></a>
+            <span class="link-btn disabled">Live Demo <span class="link-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= JOURNEY ================= -->
+  <section class="journey" id="journey">
+    <p class="eyebrow center">LEARNING JOURNEY</p>
+    <h2 class="section-title center">Where I've Been, Where I'm Going</h2>
+
+    <div class="timeline">
+      <div class="timeline-line" aria-hidden="true"></div>
+
+      <div class="timeline-item done reveal">
+        <div class="timeline-marker">01</div>
+        <div class="timeline-content"><h4>HTML</h4><p>Structure &amp; semantics</p></div>
+      </div>
+      <div class="timeline-item done reveal">
+        <div class="timeline-marker">02</div>
+        <div class="timeline-content"><h4>CSS</h4><p>Layout &amp; styling</p></div>
+      </div>
+      <div class="timeline-item current reveal">
+        <div class="timeline-marker">03</div>
+        <div class="timeline-content"><h4>JavaScript</h4><p>In progress now</p><span class="status-pill small">In Progress</span></div>
+      </div>
+      <div class="timeline-item future reveal">
+        <div class="timeline-marker">04</div>
+        <div class="timeline-content"><h4>Git &amp; GitHub</h4><p>Version control</p><span class="status-pill small future">Future Goal</span></div>
+      </div>
+      <div class="timeline-item future reveal">
+        <div class="timeline-marker">05</div>
+        <div class="timeline-content"><h4>React</h4><p>Component-based UI</p><span class="status-pill small future">Future Goal</span></div>
+      </div>
+      <div class="timeline-item future reveal">
+        <div class="timeline-marker">06</div>
+        <div class="timeline-content"><h4>Backend</h4><p>Servers &amp; databases</p><span class="status-pill small future">Future Goal</span></div>
+      </div>
+      <div class="timeline-item future reveal">
+        <div class="timeline-marker">07</div>
+        <div class="timeline-content"><h4>Full-Stack</h4><p>Long-term goal</p><span class="status-pill small future">Future Goal</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHERE I'M HEADING ================= -->
+  <section class="goals reveal">
+    <p class="eyebrow center">WHERE I'M HEADING</p>
+    <h2 class="section-title center">Goals I'm Working Toward</h2>
+
+    <div class="goals-grid">
+      <div class="goal-card">
+        <div class="goal-icon">&#127760;</div>
+        <h3>Frontend Development</h3>
+        <p>Getting comfortable building clean, responsive interfaces with HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="goal-card">
+        <div class="goal-icon">&#9881;&#65039;</div>
+        <h3>Full-Stack Development</h3>
+        <p>Eventually learning backend and databases to build complete, working applications.</p>
+      </div>
+      <div class="goal-card">
+        <div class="goal-icon">&#128736;&#65039;</div>
+        <h3>Real-World Projects</h3>
+        <p>Turning what I learn into small real projects instead of just tutorials.</p>
+      </div>
+    </div>
+
+    <div class="path-visual">
+      <span class="path-step">Learn</span>
+      <span class="path-arrow">&rarr;</span>
+      <span class="path-step">Build</span>
+      <span class="path-arrow">&rarr;</span>
+      <span class="path-step">Improve</span>
+      <span class="path-arrow">&rarr;</span>
+      <span class="path-step">Repeat</span>
+    </div>
+  </section>
+
+  <!-- ================= EXPLORING ================= -->
+  <section class="exploring reveal">
+    <p class="eyebrow center">WHAT I'M EXPLORING</p>
+    <h2 class="section-title center">Topics I'm Digging Into</h2>
+
+    <div class="explore-chips">
+      <span class="explore-chip">Web Development</span>
+      <span class="explore-chip">JavaScript</span>
+      <span class="explore-chip">UI Design</span>
+      <span class="explore-chip">Responsive Design</span>
+      <span class="explore-chip">Git &amp; GitHub</span>
+      <span class="explore-chip future">Future: React</span>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text reveal">
+        <h2 class="section-title">Let's Build Something.</h2>
+        <p class="body-text">
+          I'm always learning and open to feedback, collaboration, or just talking
+          about code. Feel free to reach out.
+        </p>
+
+        <div class="contact-buttons">
+          <a href="mailto:abhimanyu.pro11@gmail.com" class="btn btn-ghost">&#9993; Email</a>
+          <a href="https://github.com/abhimanyu0211" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/abhimanyupro" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+          <span class="form-error" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+          <span class="form-error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?"></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="logo">Abhimanyu<span class="dot">.</span></p>
+      <p class="footer-tagline">Always learning. Always building.</p>
+    </div>
+
+    <div class="footer-links">
+      <h5>Quick Links</h5>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-socials">
+      <h5>Elsewhere</h5>
+      <a href="https://github.com/abhimanyu0211" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/abhimanyupro" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:abhimanyu.pro11@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Abhimanyu. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
